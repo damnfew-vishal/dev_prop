@@ -9,19 +9,29 @@
             margin: 0;
             padding: 0;
         }
-        .container{
+        /* .container{
             width: 334px;
-            height: 334px;
+            height: 1744px;
             background-color: rgb(94, 26, 184);
             background-image: url('JollyRog.png');
             background-repeat: no-repeat;
-            background-size: contain; /*With 'contain' max portion of the image is visible to us*/
-            color: white;
+            background-size: contain; /*With 'contain' max portion of the image is visible to us or full image also*/
+            /*WHile in 'cover' whole border is to be covered which has been set*/
+            /* background-size: 63px 45px; */
+            /* background-position: top center;  */
+            /* background-attachment: fixed;
+            color: white; */
             
-        }
+        /* } */
         /* body{
             
         } */
+        /*We can also write it directly without these many number of elements using BACKGROUND SHORTHAND*/
+        .container{
+            width: auto;
+            height: 700px;
+            background: red url('JollyRog.png') no-repeat fixed right top;
+        }
     </style>
 </head>
 <body>
