@@ -1,0 +1,31 @@
+<!-- create a webpage which is green on large devices, red on medium & yellow on small devices -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: green;
+        }
+        @media screen and (max-width: 800px){
+            body{
+                background-color: red;
+            }
+        }
+        @media screen and (max-width: 600px){
+            body{
+                background-color: yellow;
+            }
+        }
+        /*In the above scenario the moment we kept on reducing the width, the web page color will keep on changing
+        Initially will be green
+        Then the moment it reached 800: red
+        And if reached to 600 then: yellow */
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: red;
+            height: 34vh;
+        }
+        /*This means the moment width of the website reduces to somewhere from 1 to 800 px the body color will
+        be Blue for that and will be shown on the page. The value can be from 1 to 800px*/
+        @media screen and (max-width: 800px){
+            body{
+                background-color: blue;
+            }
+            .container{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi ipsa ratione optio molestias quas mollitia tempora eveniet voluptates! Autem, iste cumque? Odio perferendis, eos natus cumque doloremque explicabo unde velit fuga magni architecto nostrum.
+    </div>    
+</body>
+</html>
