@@ -15,14 +15,36 @@
         }
         .box{
             border: 2px solid black;
-            transform: translate(134px) rotate(0.25turn);/*Using more than one transform in one*/
-            transform-origin: 10px;
+            /* transform: translate(34px) rotate(0turn);Using more than one transform in one */
+            /* transform-origin: 10px; */
+            /* transform: scaleX(8); */
+            /* transform: scaleY(8) */
+            /* transform: skew(10deg,10deg); */
+            /* transform: rotateX(45deg); */
+            /* transform: rotateZ(45); */
+        }
+        .box img{
+            width: 20vw;
+            height: 20vh;
+            /* transform: skew(110deg,10deg); This will rotate the image to some degrees */
+            display: inline-block;
+        }
+        img{
+            width: 455px;
+            /* transition-property: width; */
+            transition-duration: .5s;
+            transition-timing-function: ease-in;
+        }
+        img:hover{
+            width: 56px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam vero mollitia dicta assumenda alias laboriosam a cumque minima perspiciatis vitae! Laboriosam porro perferendis dignissimos fuga eligendi veniam, neque ducimus, a nesciunt et corporis. Fugiat.</div>
+        <div class="box">
+            <img src="https://source.unsplash.com/user/erondu">
+        </div>
     </div>    
 </body>
 </html>
