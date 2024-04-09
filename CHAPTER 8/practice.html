@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            text-align: center;
+            justify-content: center;
+            height: 122px;
+            color: white;
+        }
+        main{
+            background-color: blue;
+            height: 899px;
+        }
+        .progress{
+            background-color: red;
+            height: 3px;          
+            animation-name: load;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;  
+            animation-iteration-count: 1;
+        }  
+
+        @keyframes load {
+            0%{
+                width: 20vw;
+            }
+            50%{
+                width: 60vw;
+            }
+            100%{
+                width: 100vw;
+            } 
+        }    
+        /* img{
+            animation-name: logo;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+        }  */
+
+        @keyframes logo{ /*This was for the rotating of the logo*/
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .slider{
+            background-color: white;
+            height: 223px;
+            overflow: hidden; /*Image will be hidden if it goes out of the respective div*/
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+        .img1{
+            transform: translate(-8vw);
+        }
+        .img2{
+            transform: translate(0vw); 
+        }
+        .img3{
+            transform: translate(8vw);             
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- The order in which it is present or written here in the same order it'll appear on the page. -->
+    <!-- Earlier my progress was below the header and main therefore it was not reflecting on the web page -->
+    <!-- Therefore progress part should be there on the top so we defined this thing first -->
+    <div class="progress"></div>
+    <header><strong>TOMCATS FOREVER</strong></header>
+    <main>
+        <!-- <img src="image.png" width="233px"> -->
+        <div class="slider">
+            <img class="img1" src="https://source.unsplash.com/collection/190727/1600x900">
+            <img class="img2" src="https://source.unsplash.com/collection/190727/1600x900">
+            <img class="img3" src="https://source.unsplash.com/collection/190727/1600x900">
+        </div>
+    </main>
+</body>
+</html>

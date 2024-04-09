@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 20vh;
+    background-color: black;
+}
+main{
+    background-color: blue;
+    height: 80vh;
+}
+.reload{
+    background-color: red;
+    height: 0.75vh;
+    animation-name: loading;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+@keyframes loading {
+    0%{
+        width: 0vw;
+    }
+    50%{
+        width: 60vw;
+    }
+    100%{
+        width: 100vw;
+    }    
+}
+img{
+    animation-name: roll;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes roll {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
