@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root{
+    --main-bg-color: brown;/*Acts as a global variable*/
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+header{
+    font-family: "Lato", sans-serif;
+    height: 58px;
+    background-color: var(--main-bg-color);
+}
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    /* display: inline;     */
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a{
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-decoration: none;/*With this text-decoration set to none the underline which we were seeing under the text has been removed.*/
+}
+img{
+    height: 20vh;
+    width: 20vw;
+}
