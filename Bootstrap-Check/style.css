@@ -1,0 +1,19 @@
+
+.container{
+    background-color: brown;
+    border: 2px dashed black;
+    width: 80vw;
+    height: 50vh;
+    color: yellow;
+    animation-name: check;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes check {
+    from{
+        height: 50vh;
+    }
+    to{
+        height: 20vh;
+    }
+}
